@@ -18,7 +18,7 @@ class Home extends React.Component {
         sessionStorage.clear();
         axios({
             method: 'GET',
-            url: 'https://dry-wildwood-72957.herokuapp.com/locations',
+            url: 'https://z-clone-backend.herokuapp.com/locations',
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -28,7 +28,7 @@ class Home extends React.Component {
 
         axios({
             method: 'GET',
-            url: 'https://dry-wildwood-72957.herokuapp.com/mealtypes',
+            url: 'https://z-clone-backend.herokuapp.com/mealtypes',
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {

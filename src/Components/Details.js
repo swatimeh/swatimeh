@@ -43,7 +43,7 @@ class Details extends React.Component {
 
         axios({
             method: 'GET',
-            url: `http://localhost:2302/restaurant/${restaurant}`,
+            url: `https://z-clone-backend.herokuapp.com/restaurant/${restaurant}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -55,7 +55,7 @@ class Details extends React.Component {
     handleOrder = (resId) => {
         axios({
             method: 'GET',
-            url: `http://localhost:2302/menuitems/${resId}`,
+            url: `https://z-clone-backend.herokuapp.com/menuitems/${resId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -131,7 +131,7 @@ class Details extends React.Component {
     }
 
     getData = (data) => {
-        return fetch(`http://localhost:2302/payment`, {
+        return fetch(`https://z-clone-backend.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
